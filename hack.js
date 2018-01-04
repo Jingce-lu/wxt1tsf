@@ -2,7 +2,7 @@ var CryptoJS = require('crypto-js')
 var request = require('request-promise')
 
 /*
- * npm install crypto-js request-promise 
+ * npm install crypto-js request-promise
  * node wx_hack.js
  */
 
@@ -67,7 +67,7 @@ var version = 9,
     score = Math.round(10000+Math.random()*2000),
     // score = 1314,
     // replace with your session_id here
-    session_id = 'oVvflJItAOJrmBGLdLYDLy0hIWSKzSVYCVW4c/3OKrWYw0Le1KzHr4ea+30LseDOtvZ92nu4zsQtp4cf2NWM1qExc74P9/1/ZNUpTMK0My6EoUiXIskqZKWs1BbevLTXJGBymqI6Q50olo6TA9H2sQ=='
+    session_id = 'xxxxx'
 
 var headers = {
     'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_1 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Mobile/15C153 MicroMessenger/6.6.1 NetType/WIFI Language/zh_CN',
@@ -91,8 +91,8 @@ request({
     headers: headers,
     json: true,
     body: base_req
-}).then(function (response) { 
-    // console.log(path, response) 
+}).then(function (response) {
+    // console.log(path, response)
 })
 
 path = 'wxagame_getfriendsscore'
